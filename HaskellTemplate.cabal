@@ -55,12 +55,12 @@ library
   -- other-extensions:
   -- Other library packages from which modules are imported.
   build-depends:
-    base ^>=4.18.3.0,
+    base >=4.12 && <5,
     bytestring,
     dotenv,
     lens,
     newtype,
-    protolude ^>=0.3.5,
+    protolude >=0.3.5 && <0.4,
     text,
     unliftio,
 
@@ -91,9 +91,9 @@ executable HaskellTemplate
   -- Other library packages from which modules are imported.
   build-depends:
     HaskellTemplate,
-    base ^>=4.18.3.0,
+    base >=4.12 && <5,
     dotenv,
-    protolude ^>=0.3.5,
+    protolude >=0.3.5 && <0.4,
 
   -- Directories containing source files.
   hs-source-dirs: app
@@ -136,7 +136,7 @@ test-suite HaskellTemplate-test
   build-depends:
     HUnit,
     HaskellTemplate,
-    base ^>=4.18.3.0,
-    protolude ^>=0.3.5,
+    base >=4.12 && <5,
+    protolude >=0.3.5 && <0.4,
     tasty,
     tasty-hunit,
