@@ -1,6 +1,6 @@
 module Main (main) where
 
-import System.IO (IO, putStrLn)
+import Prelude (IO, putStrLn)
 
 main :: IO ()
 main = putStrLn "Test suite not yet implemented."

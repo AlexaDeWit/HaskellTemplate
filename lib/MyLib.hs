@@ -1,6 +1,6 @@
 module MyLib (someFunc) where
 
-import System.IO (IO, putStrLn)
+import Prelude (IO, putStrLn)
 
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"
